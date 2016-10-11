@@ -1,0 +1,37 @@
+/*定义通用样式*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: darkslategray;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color: darkslategray;
+	outline: none;
+	-moz-outline-style: none;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+a:hover{
+	text-decoration: none;
+	color: #FF6600;
+}
+a:focus{outline:none; -moz-outline-style: none;}
+.on{
+	display: block;
+}
+.off{
+	display: none;
+}
+.red{color: red;}
+.theme-color{color:#EB5350}
+.bold{font-weight: bold;}
+.padding-tb-10{padding: 10px 0px;}
+.padding-0{padding: 0;}
+em{font-weight: normal;font-style: normal; padding: 0 8px; color: #838282;}
