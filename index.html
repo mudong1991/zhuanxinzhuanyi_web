@@ -204,7 +204,7 @@
 							<dl>
 								<dd>
 									<a href="#" class="sale-shop-img">
-										<img src="images/shop1.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="200" height="187"  />
+										<img src="images/shop1.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="216" height="206"  />
 										<span>
 											<strong>6.8</strong>
 											<br />
@@ -221,32 +221,108 @@
 								</dd>
 							</dl>
 						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop2.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="216" height="206"  />
+										<span>
+											<strong>6.8</strong>
+											<br />
+											折
+										</span>
+										<div class="sale-shop-time" ><img src="images/time-sm.png" />剩余时间：19  时  20  分 50 秒 </div>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop3.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="216" height="206"  />
+										<span>
+											<strong>6.8</strong>
+											<br />
+											折
+										</span>
+										<div class="sale-shop-time" ><img src="images/time-sm.png" />剩余时间：19  时  20  分 50 秒 </div>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop4.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="216" height="206"  />
+										<span>
+											<strong>6.8</strong>
+											<br />
+											折
+										</span>
+										<div class="sale-shop-time" ><img src="images/time-sm.png" />剩余时间：19  时  20  分 50 秒 </div>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						
 						<script type="text/javascript">
-							var sale_time_list = [];
+							/*这个脚本是特价商品的剩余时间，expire_time_list表示商品到期时间对象，
+							 * 这里只是方便直接用了固定时间，实际应用时要将字符串的时间转化成时间对象，示例代码：
+							 * var str ='2012-08-12 23:13:15';
+							 * str = str.replace(/-/g,"/");
+							 * var date = new Date(str);
+							 * 列表的每个元素一一对应每个商品。
+							*/
+							var expire_time_list = [new Date((new Date()).getTime() + 100000), new Date((new Date()).getTime() + 1200000), 
+												  new Date((new Date()).getTime() + 1300000), new Date((new Date()).getTime() + 11100000)];
 						
 							function get_time(){
-						        time = new Date(time.getTime() + 1000);
-						
-						        var year = time.getFullYear();
-						        var month = time.getMonth()+1;
-						        month = month < 10 ? '0'+ month : month;
-						        var day = time.getDate() < 10 ? '0' + time.getDate(): time.getDate();
-						        var week = time.getDay();
-						        var week_select = ['日', '一', '二', '三', '四', '五', '六'];
-						        var hours = time.getHours() < 10 ? '0' + time.getHours(): time.getHours();
-						        var Minutes = time.getMinutes()< 10 ? '0' + time.getMinutes(): time.getMinutes();
-						        var seconds = time.getSeconds()< 10 ? '0' + time.getSeconds(): time.getSeconds();
-						
-						        {% get_current_language as LANGUAGE_CODE %}
-						        var cur_lange = "{{ LANGUAGE_CODE }}" ? "{{ LANGUAGE_CODE }}": 'en';
-						        var time_strf = '';
-						        if (cur_lange == "zh-hans") {
-						            time_strf = "今天是" + year + "年" + month + "月" + day + "日  星期" + week_select[week] + "           " + hours + ":" +
-						                    Minutes + ":" + seconds;
-						        }else {
-						            time_strf = year + '-' + month + '-' + day + '  ' + hours + ':' + Minutes + ':' + seconds;
-						        }
-						        $('.top_time').text(time_strf);
+								$.each($('.sale-shop-time'), function(index, item){
+									var shop_expire_time = expire_time_list[index];
+									var surplus_time = shop_expire_time.getTime()-(new Date()).getTime();
+									surplus_time = surplus_time < 0 ? 0 : surplus_time;
+									//------------------------------  
+  
+								    //计算出相差天数  
+								    var days=Math.floor(surplus_time/(24*3600*1000))  
+								  
+								    //计算出小时数  
+								  
+								    var leave1=surplus_time%(24*3600*1000)    //计算天数后剩余的毫秒数  
+								    var hours=Math.floor(leave1/(3600*1000))  
+								    //计算相差分钟数  
+								    var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数  
+								    var minutes=Math.floor(leave2/(60*1000))  
+								    //计算相差秒数  
+								    var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数  
+								    var seconds=Math.round(leave3/1000)  
+									
+									var time_formate_str = "剩余： ";
+									if (days > 0){time_formate_str += days+" 天 ";}
+									time_formate_str += hours+" 小时 "+minutes+" 分钟 "+seconds+" 秒"
+									$(item).text(time_formate_str);
+								})
+							
 						    }
 						    get_time();
 						    var timer = setInterval(get_time, 1000);
