@@ -19,7 +19,6 @@ a{
 	transition: color 0.2s;
 }
 a:hover{
-	text-decoration: none;
 	color: #FF6600;
 }
 a:focus{outline:none; -moz-outline-style: none;}
@@ -29,7 +28,7 @@ a:focus{outline:none; -moz-outline-style: none;}
 .off{
 	display: none;
 }
-.red{color: red;}
+.red{color: #E31939;}
 .theme-color{color:#EB5350}
 .bold{font-weight: bold;}
 .padding-tb-10{padding: 10px 0px;}

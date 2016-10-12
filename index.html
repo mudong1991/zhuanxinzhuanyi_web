@@ -33,6 +33,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
 		<script type="text/javascript" src="js/slider.js" ></script>
+		<script type="text/javascript" src="js/onscroll.js"></script>
 	</head>
 	<body>
 		<!--顶部信息-->
@@ -192,18 +193,98 @@
 		</div>
 		<!--限时特价-->
 		<div class="site-sale">
-			<div class="site-container clearfix">
+			<div class="site-container clearfix sale">
 				<div class="sale-left col-xs-9 padding-0">
-					<h2 class="page-list-header">
-						限时抢购
+					<h2 class="page-list-header animated lightSpeedIn">
+						<p class=""><i class="fa fa-lg fa-clock-o"></i>   <strong class="red">限时</strong>抢购</p>
+						<p class="show-more"><a href="#">更多特价<span></span></a></p>
 					</h2>
-					<ul class="sale-list">
-						<li></li>
+					<ul class="sale-list clearfix">
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop1.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="200" height="186"  />
+										<span>
+											<strong>6.8</strong>
+											<br />
+											折
+										</span>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop2.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="200" height="186"  />
+										<span>
+											<strong>8.8</strong>
+											<br />
+											折
+										</span>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop3.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="200" height="186"  />
+										<span>
+											<strong>7.6</strong>
+											<br />
+											折
+										</span>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="animate-element left-to-right col-xs-3">
+							<dl>
+								<dd>
+									<a href="#" class="sale-shop-img">
+										<img src="images/shop4.jpg" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床" width="200" height="186"  />
+										<span>
+											<strong>6.2</strong>
+											<br />
+											折
+										</span>
+									</a>
+								</dd>
+								<dd>
+									<p><a class="sale-shop-title" href="#" title="美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床">美式古典 双面描金雕花排骨架床美式古典 双面描金雕花排骨架床</a></p>
+								</dd>
+								<dd>
+									<p>限时特价：<strong ><a href="#" class="red">¥1300</a></strong></p>
+								</dd>
+							</dl>
+						</li>
 					</ul>
 				</div>
 				<div class="sale-right col-xs-3 padding-0">
 					<p class="sale-ad">
-						<a href="#"><img class="img-responsive" src="images/ad-sm.jpg" title="好礼相送" /></a>
+						<a href="#" class="animated bounce"><img  src="images/ad_sm.jpg" title="好礼相送" width="100%" height="104" /></a>
 					</p>
 					<div class="notice clearfix">
 						<ul>
@@ -211,7 +292,7 @@
 								<p class="notice-head notice-head-active" id="notice-head-0"/>
 									网站公告
 								</p>
-								<div class="notice-body animate-element scale-up start-animation" id="notice-body-0">
+								<div class="notice-body animate-element scale-up" id="notice-body-0">
 									<p class="notice-content-info">
 										<a href="#">第266家体验馆花落牡丹江！</a>
 										<a href="#">中原大地再迎新馆！美乐乐第265！</a>
@@ -223,7 +304,7 @@
 								<p class="notice-head" id="notice-head-1"/>
 									订单状态查询
 								</p>
-								<div class="notice-body animate-element scale-up start-animation off" id="notice-body-1">
+								<div class="notice-body animate-element scale-up off" id="notice-body-1">
 									<form action="" method="post">
 										<input type="text" placeholder="请输入订单号" class="form-control input-sm"/>
 										<button class="btn btn-sm btn-info">查询</button>
@@ -239,6 +320,7 @@
 			</div>
 		</div>
 		<!--人气推荐-->
+		
 		
 		<!--案例效果-->
 		

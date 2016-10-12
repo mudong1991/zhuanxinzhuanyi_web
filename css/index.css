@@ -15,10 +15,11 @@
 .flex-control-paging li a.flex-active,.flex-control-paging li.active a {background-position: 0 0;}
 .flexslider .slides a img {width: 100%;height: 482px;display: block;}
 /*限时特价*/
-.sale-right{min-height: 320px; padding-left: 20px;}
-.sale-left{}
-.sale-ad{ display: block; height: auto; background-color: red;}
-.notice{position: relative;border: 1px solid #D5D5D5;width: 100%; height: 206px; border-top: none;}
+.sale{margin-bottom: 20px;}
+.sale-right{min-height: 310px; padding-left: 20px; }
+.sale-left{min-height: 310px; }
+.sale-ad a{display: block;}
+.notice{position: relative;border: 1px solid #D5D5D5;width: 100%; height: 190px; border-top: none;}
 .notice-head{display: block; cursor: pointer; font-weight: normal;width: 50%; text-align: center; transition: all 0.3s;height: 32px; background: #F6F6F6; line-height: 32px; border:1px solid #D5D5D5; border-left: none;
 			float:left}
 #notice-head-1{border-right: none !important;}
@@ -32,3 +33,20 @@
 #notice-body-1 p{margin: 10px 0px;}
 #notice-body-1 p a{color: #E31939;}
 #notice-body-1 p a:hover{ color: #f08300; ;text-decoration: underline;}
+.page-list-header{position: relative;width: 100%; border-bottom: 2px solid #EB5350; font-size: 20px; height: 40px; line-height: 40px; margin: 0; padding: 0;}
+.show-more{position: absolute; right: 0; top: 0;}
+.show-more a{display:inline-block;font-size: 14px; color: #CD2E2E; position: relative; padding-right: 14px;height: 22px; line-height: 22px;}
+.show-more a span{display: inline-block; width: 14px; height: 14px;  position: absolute; 
+right:0px; top: 5px;background: url(../images/bg7.png) -258px -175px;}
+.sale-list{margin-top: 10px;}
+.sale-list li{height: 252px; padding: 0; }
+.sale-list li dl{width: 100%;}
+.sale-list li dl dd{width: 100%; text-align: center;}
+.sale-shop-img{display: block; width: 200px ; height: 180px; position: relative;-webkit-transition:all 0.5s; transition: all 0.5s;
+-moz-transition:all 0.5s;-o-transition:all 0.5s; }
+.sale-shop-img span{display: block; position: absolute; top: 6px; right: 6px; width: 46px; height: 44px;
+background: transparent url(../images/tag_new.png) no-repeat; color: white; padding-top: 2px;}
+.sale-shop-img span strong{font-size: 16px;}
+.sale-shop-img:hover{transform: scale(1.06); box-shadow: 0px 0px 5px #333;}
+.sale-list li dl dd p{width: 80%; margin: 0 auto;}
+.sale-shop-title{height: 24px; line-height: 24px;width: 100%;white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;display: block; margin-top: 12px;}
