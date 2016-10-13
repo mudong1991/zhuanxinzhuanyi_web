@@ -33,4 +33,11 @@ a:focus{outline:none; -moz-outline-style: none;}
 .bold{font-weight: bold;}
 .padding-tb-10{padding: 10px 0px;}
 .padding-0{padding: 0;}
+.margin-top-10{margin-top: 10px;}
+.margin-left-10{margin-left: 10px;}
+.margin-top-16{margin-top: 16px;}
+.margin-left-16{margin-left: 16px;}
+.margin-top-22{margin-top: 22px;}
+.margin-left-22{margin-left: 22px;}
+.text-overflow-ellipsis{white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;}
 em{font-weight: normal;font-style: normal; padding: 0 8px; color: #838282;}

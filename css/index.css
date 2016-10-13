@@ -15,11 +15,11 @@
 .flex-control-paging li a.flex-active,.flex-control-paging li.active a {background-position: 0 0;}
 .flexslider .slides a img {width: 100%;height: 482px;display: block;}
 /*限时特价*/
-.sale{margin-bottom: 20px;}
-.sale-right{min-height: 310px; padding-left: 20px; }
-.sale-left{min-height: 310px; }
+.sale{margin-bottom: 40px;}
+.sale-right{min-height: 316px; padding-left: 20px; }
+.sale-left{min-height: 316px; }
 .sale-ad a{display: block;}
-.notice{position: relative;border: 1px solid #D5D5D5;width: 100%; height: 190px; border-top: none;}
+.notice{position: relative;border: 1px solid #D5D5D5;width: 100%; height: 196px; border-top: none;}
 .notice-head{display: block; cursor: pointer; font-weight: normal;width: 50%; text-align: center; transition: all 0.3s;height: 32px; background: #F6F6F6; line-height: 32px; border:1px solid #D5D5D5; border-left: none;
 			float:left}
 #notice-head-1{border-right: none !important;}
@@ -38,17 +38,29 @@
 .show-more a{display:inline-block;font-size: 14px; color: #CD2E2E; position: relative; padding-right: 14px;height: 22px; line-height: 22px;}
 .show-more a span{display: inline-block; width: 14px; height: 14px;  position: absolute; 
 right:0px; top: 5px;background: url(../images/bg7.png) -258px -175px;}
-.sale-list{margin-top: 10px;}
-.sale-list li{height: 252px; padding: 0; }
+.sale-list{}
+.sale-list li{height: 256px; padding: 0; margin-top: 16px;}
 .sale-list li dl{width: 100%;}
 .sale-list li dl dd{width: 100%; text-align: center;}
 .sale-shop-img{display: block; width: 216px ; height: 206px; position: relative;-webkit-transition:all 0.5s; transition: all 0.5s;
--moz-transition:all 0.5s;-o-transition:all 0.5s; }
+-moz-transition:all 0.5s;-o-transition:all 0.5s;margin: 0 auto;}
 .sale-shop-img span{display: block; position: absolute; top: 6px; right: 6px; width: 46px; height: 44px;
 background: transparent url(../images/tag_new.png) no-repeat; color: white; padding-top: 2px;}
 .sale-shop-img span strong{font-size: 16px;}
 .sale-shop-img:hover{transform: scale(1.04); box-shadow: 0px 0px 5px #ccc;}
 .sale-shop-img:hover .sale-shop-time{background-color: #E31939;}
 .sale-shop-time{position: absolute; bottom: 2px; left: 0; transition: all 0.5s;width: 100%; height: 28px; line-height: 28px;background-color: rgba(0,0,0, 0.6); color: white;}
-.sale-list li dl dd p{width: 80%; margin: 0 auto;}
+.sale-list li dl dd p{width: 200px; margin: 0 auto;}
 .sale-shop-title{height: 24px; line-height: 24px;width: 100%;white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;display: block; margin-top: 10px;}
+/*人气推荐（延用了限时特价销售的样式，这里只是补充了一些样式）*/
+.recommend_img_width{width: 270px !important; }
+/*案例效果*/
+.product{margin-bottom: 40px; }
+.product-md a{display: block;position: relative; color: white; transition: all 0.5s; overflow: hidden;}
+.product-md a p{position: absolute; bottom: 0; left: 0; width: 100%;  height: 32px; margin: 0; line-height: 32px; background-color: rgba(0, 0, 0, 0.6);
+transition: all 0.5s;}
+.product-md a p span{display: block; width: 80%; margin: 0 auto;}
+.product-md a:hover{transform: scale(1.04);}
+.product-md a:hover p{background-color: #FF6600; font-size: 14px;}
+.product-md a:hover img{transition: all 0.5s;}
+.product-md a:hover img{transform: scale(1.1);}
