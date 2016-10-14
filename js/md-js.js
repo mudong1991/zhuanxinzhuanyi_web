@@ -20,6 +20,7 @@ $(function(){
 	$(".shop-car").on("mouseout", function(){
 		icon_down(".shop-car-icon-down");
 	})
+	
 	//轮播广告
 	var bannerSlider = new Slider($('#banner_tabs'), {
 		time: 5000,
@@ -36,8 +37,9 @@ $(function(){
 	$('#banner_tabs .flex-next').click(function() {
 		bannerSlider.next()
 	});
+	
 	//网站公告
-	function dh_over(num){
+	function notice_over(num){
 		var notice_body=[];
 		notice_body[0]=$("#notice-body-0");
 		notice_body[1]=$("#notice-body-1");
@@ -58,10 +60,11 @@ $(function(){
 		}
 	};
 	$(".notice-list-0").on("mouseover", function(){
-		dh_over(0);
+		notice_over(0);
 	})
 	$(".notice-list-1").on("mouseover", function(){
-		dh_over(1);
+		notice_over(1);
 	})
-
+	
+	
 })

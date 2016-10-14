@@ -34,6 +34,7 @@
 		<script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
 		<script type="text/javascript" src="js/slider.js" ></script>
 		<script type="text/javascript" src="js/onscroll.js"></script>
+		<script type="text/javascript" src="js/jquery.rollGallery_md.js"></script>
 	</head>
 	<body>
 		<!--顶部信息-->
@@ -108,7 +109,7 @@
 					<div class="shop-car pull-right" href="#">
 						<a href="#"><i class="fa fa-shopping-cart"></i>  购物车<b class="red">1</b>件    <i class="fa fa-caret-down shop-car-icon-down"></i></a>
 						
-						<ul class="shop-car-ul animated bounceInDown">
+						<ul class="shop-car-ul animated fadeIn">
 							<li>
 								你的购物车还没有商品，快去选购商品吧！
 							</li>
@@ -523,7 +524,7 @@
 				<div class="col-xs-12 padding-0">
 					<h2 class="page-list-header animated lightSpeedIn">
 						<p class="">
-							<i class="fa fa-picture-o"></i>  
+							<i class="fa fa-building-o"></i>  
 							 案例效果
 							<small>/ Product case</small>	
 						</p>
@@ -533,8 +534,8 @@
 				<!--案例上面部分-->
 				<div class="col-xs-12 padding-0 margin-top-16">
 					<!--按钮左边部分-->
-					<div class="col-xs-3 padding-0">
-						<div class="col-xs-12 product-md ">
+					<div class="col-xs-3 padding-0 animate-element scale-up">
+						<div class="col-xs-12 product-md">
 							<a href="#" title="新自然营造舒适空间风格效果赏析">
 								<img src="images/product1.jpg"  class="img-responsive" width="300"/>
 								<p><span class="text-overflow-ellipsis">新自然营造舒适空间风格效果赏析新自然营造舒适空间风格效果赏析</span></p>
@@ -548,7 +549,7 @@
 						</div>
 					</div>
 					<!--案例中间部分-->
-					<div class="col-xs-6 padding-0">
+					<div class="col-xs-6 padding-0 animate-element scale-up">
 						<div class="col-xs-12 product-md">
 							<a href="#" title="新自然营造舒适空间风格效果赏析">
 								<img src="images/product_main.jpg"  class="img-responsive" width="580"/>
@@ -557,7 +558,7 @@
 						</div>
 					</div>
 					<!--案例右边部分-->
-					<div class="col-xs-3 padding-0">
+					<div class="col-xs-3 padding-0 animate-element scale-up">
 						<div class="col-xs-12 product-md ">
 							<a href="#" title="新自然营造舒适空间风格效果赏析">
 								<img src="images/product3.jpg"  class="img-responsive" width="300"/>
@@ -575,7 +576,7 @@
 				<!--案例下边部分-->
 				<div class="col-xs-12 padding-0 margin-top-10 ">
 					<ul > 
-						<li class="col-xs-3 padding-0">
+						<li class="col-xs-3 padding-0 animate-element left-to-right">
 							<div class="col-xs-12 product-md ">
 								<a href="#" title="新自然营造舒适空间风格效果赏析">
 									<img src="images/product_xd.jpg"  class="img-responsive" width="300" />
@@ -584,7 +585,7 @@
 							</div>
 						</li>
 						<li class="col-xs-3 padding-0">
-							<div class="col-xs-12 product-md ">
+							<div class="col-xs-12 product-md animate-element left-to-right">
 								<a href="#" title="新自然营造舒适空间风格效果赏析">
 									<img src="images/product_jy.jpg"  class="img-responsive" width="300"/>
 									<p><span class="text-overflow-ellipsis">简约</span></p>
@@ -592,7 +593,7 @@
 							</div>
 						</li>
 						<li class="col-xs-3 padding-0">
-							<div class="col-xs-12 product-md ">
+							<div class="col-xs-12 product-md animate-element left-to-right">
 								<a href="#" title="新自然营造舒适空间风格效果赏析">
 									<img src="images/product_zs.jpg"  class="img-responsive" width="300"/>
 									<p><span class="text-overflow-ellipsis">中式</span></p>
@@ -600,7 +601,7 @@
 							</div>
 						</li>
 						<li class="col-xs-3 padding-0">
-							<div class="col-xs-12 product-md ">
+							<div class="col-xs-12 product-md animate-element left-to-right">
 								<a href="#" title="新自然营造舒适空间风格效果赏析">
 									<img src="images/product_os.jpg"  class="img-responsive" width="300"/>
 									<p><span class="text-overflow-ellipsis">欧式</span></p>
@@ -612,13 +613,170 @@
 			</div>
 		</div>
 		
-		<!--新闻中心-->
+		<!--新品发布/新闻中心-->
 		<div class="site-news">
-			<div class="site-container">
-				 
+			<div class="site-container clearfix news">
+				<div class="col-xs-12 padding-0">
+					<h2 class="page-list-header animated lightSpeedIn">
+						<p class="">
+							<i class="fa fa-building-o"></i>  
+							 最新动态
+							<small>/ Recently news</small>	
+						</p>
+						<p class="show-more"><a href="#">更多动态<span></span></a></p>
+					</h2>
+				</div>
+				<div class="col-xs-12 margin-top-16">
+					<div class="col-xs-6 new-product padding-0">
+						<h4>
+							<strong>新品发布</strong>
+						</h4>
+						<ul class="new-product-list clearfix" >
+							<li >
+								<div class="col-xs-4">
+									<a href="#" target="_blank" title="单身女汉子独爱kitty猫儿，单身族居家必备神器！">
+										<img src="images/new-product-1.jpg" class="img-responsive" width="180"/>
+										<p class="text-center text-overflow-ellipsis">单身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！
+										单身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！</p>
+										<p class="text-center">本站优惠价:<strong class="red">¥600.00</strong></p>
+									</a>
+								</div>
+								<div class="col-xs-4">
+									<a href="#" target="_blank" title="单身女汉子独爱kitty猫儿，单身族居家必备神器！">
+										<img src="images/new-product-2.jpg" class="img-responsive" width="180"/>
+										<p class="text-center text-overflow-ellipsis">单身女aaa汉子</p>
+										<p class="text-center">本站优惠价:<strong class="red">¥800.00</strong></p>
+									</a>
+								</div>
+								<div class="col-xs-4">
+									<a href="#" target="_blank" title="单身女汉子独爱kitty猫儿，单身族居家必备神器！">
+										<img src="images/new-product-3.jpg" class="img-responsive" width="180"/>
+										<p class="text-center text-overflow-ellipsis">单身女汉子独爱kitty猫儿，单身族居家必备神器！</p>
+										<p class="text-center">本站优惠价:<strong class="red">¥400.00</strong></p>
+									</a>
+								</div>
+							</li>
+							<li >
+								<div class="col-xs-4">
+									<a href="#" target="_blank" title="单身女汉子独爱kitty猫儿，单身族居家必备神器！">
+										<img src="images/new-product-4.jpg" class="img-responsive" width="180" />
+										<p class="text-center text-overflow-ellipsis">单身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！
+										单身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！身女汉子独爱kitty猫儿，单身族居家必备神器！</p>
+										<p class="text-center">本站优惠价:<strong class="red">¥600.00</strong></p>
+									</a>
+								</div>
+								<div class="col-xs-4">
+									<a href="#" target="_blank" title="单身女汉子独爱kitty猫儿，单身族居家必备神器！">
+										<img src="images/new-product-5.jpg" class="img-responsive" width="180"/>
+										<p class="text-center text-overflow-ellipsis">单身女aaa汉子</p>
+										<p class="text-center">本站优惠价:<strong class="red">¥800.00</strong></p>
+									</a>
+								</div>
+								
+							</li>
+						</ul>
+						<script type="text/javascript">
+							$(".new-product-list").rollGallery({
+								direction:"right",
+								speed:3000,
+								showNum:1
+							});
+						</script>
+					</div>
+					<div class="col-xs-6 new-message padding-0">
+						<h4 class="col-xs-12">
+							<strong>行业动态</strong>
+						</h4>
+						<div class="col-xs-12 new-message-content">
+							<ul class="new-message-list">
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"
+											台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"
+										</a>
+									</div>
+								</li>
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 1
+										</a>
+									</div>
+								</li>
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 2
+										</a>
+									</div>
+								</li>
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 3
+										</a>
+									</div>
+								</li>
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"
+											台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"台当局拟月发万元鼓励高中生晚上大学 遭批"疯了"
+										</a>
+									</div>
+								</li>
+								<li title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" class="clearfix">
+									<div class="col-xs-2 padding-0">
+										<a href="#" class="new-message-img">
+											<img title="台当局拟月发万元鼓励高中生晚上大学 遭批疯了" src="images/news-1.jpg" class="img-responsive img-circle pull-left"/>
+										</a>
+									</div>
+									<div class="col-xs-10 padding-0 text-overflow-ellipsis">
+										<a href=""  class="new-message-title text-overflow-ellipsis">
+											台当局拟月发万元鼓励高中生晚上大学 4
+										</a>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<script type="text/javascript">
+							$(".new-message-list").rollGallery({
+								direction:"top",
+								speed:3000,
+								showNum:1
+							});
+						</script>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!--地图-->
 		
 		<!--专属服务-->
 		
