@@ -71,20 +71,20 @@
 
 	// 测飘
 	
-//	$(function() {
-//		$(window).resize(function() { goTop(); });
-//		$(window).scroll(function() { goTop(); });
-//	});
-//	function goTop() {
-//		
-//		$(".floatfile").stop().animate({ "top": ($(window).height() + $(window).scrollTop() - ($(window).height() + $(".floatfile").height()) / 2) < 218 ? 218 :
-//		  $(window).height() + $(window).scrollTop() - ($(window).height() + $(".floatfile").height()) / 2
-//		}, 600);
-//	}
-//	
-//	$(".topGo").click(function(){
-//		$('html, body').animate({scrollTop:0},800);
-//	});
+	$(function() {
+		$(window).resize(function() { goTop(); });
+		$(window).scroll(function() { goTop(); });
+	});
+	function goTop() {
+		
+		$(".floatfile").stop().animate({ "top": ($(window).height() + $(window).scrollTop() - ($(window).height() + $(".floatfile").height()) / 2) < 218 ? 218 :
+		  $(window).height() + $(window).scrollTop() - ($(window).height() + $(".floatfile").height()) / 2
+		}, 600);
+	}
+	
+	$(".topGo").click(function(){
+		$('html, body').animate({scrollTop:0},800);
+	});
 	
 	//------------------------------------------------------------------------------------------------------------
     

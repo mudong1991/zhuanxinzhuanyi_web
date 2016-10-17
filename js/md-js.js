@@ -66,5 +66,5 @@ $(function(){
 		notice_over(1);
 	})
 	
-	
+
 })
