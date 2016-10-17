@@ -38,10 +38,28 @@
 .shop-car-pay{padding: 0; margin: 0; text-align: right; padding-right: 5px;}
 /*导航*/
 .site-nav{height: 40px; width: 100%; background:#EB5350; margin-top: 10px;box-shadow: 0px 0px 6px #999; color: white; font-size: 16px; text-align: center;}
-.nav-list-ul a{display: inline-block; width: 100px; color: white; height: 40px; line-height: 40px; position: relative;}
-.nav-active{background:#E31939;;}
-.nav-list-ul a:hover{background: #E31939;}
+.nav-list-ul a{display: inline-block; width: 100px; color: white; height: 40px; line-height: 40px; position: relative; transition: all 0.5s;}
+.nav-active{background:#E31939;}
+.nav-list-ul a:hover{background: #E31939; text-decoration: none;}
 .nav-list-ul a img{position: absolute;}
+
+/*专属服务*/
+.site-service{margin-bottom: 20px;}
+.service{height: 180px; width: 180px; border: 1px solid #D5D5D5; margin: 0 auto; border-radius: 50%;padding-top:12px; cursor: pointer; transition:all 0.5s;}
+.service:hover{border: 1px solid #E31939;}
+.serice-img{ width: 60px; height: 52px;  margin: 0 auto; display: block; text-align: center;}
+.serice-img i{font-size: 60px;}
+.service p{width: 140px;margin: 0 auto;}
+.service h4{transition: all 0.5s;}
+.service:hover h4{color: #e31939;}
+/*侧飘*/
+.floatfile{position: absolute; width: 60px; height: 320px; right: 20px;z-index: 9999;  background: rgba(0,0,0,0.25);}
+.floatfile a{display: block; width: 100%; height:80px; color: white; text-align: center; transition: all 0.5s; position: relative;}
+.floatfile a:hover{text-decoration: none; color: #FF6600; background: rgba(0,0,0,0.6);}
+.floatfile a span{display: block; width: 100%; height: 60px; line-height: 60px ; font-size: 32px;}
+.free-phone{position: absolute; width: 200px; height: 80px; right: 60px; top: 0; background: rgba(0,0,0,0.6); padding: 4px 8px; display: none; transition: all 0.5s;}
+.free-phone input{margin-top: 4px;}
+.floatfile a:hover .free-phone{display: block;}
 
 /*网页底部*/
 .site-footer{ background: transparent url(../images/goods_block.gif) repeat; min-height: 280px;}
