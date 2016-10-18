@@ -1,4 +1,7 @@
 $(function(){
+	/*
+	 *index.html的js脚本
+	 * ******************************************************************/
 	//小指向图标变换
 	function icon_down(icon_class){
 		$(icon_class).removeClass("fa fa-caret-up");
@@ -66,5 +69,34 @@ $(function(){
 		notice_over(1);
 	})
 	
-
+	/*
+	 *product.html的js脚本
+	 * ******************************************************************/
+	//产品筛选
+	$("#product-category-0 span").on("click", function(){
+		$("#product-category-0 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	$("#product-category-1 span").on("click", function(){
+		$("#product-category-1 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	$("#product-category-2 span").on("click", function(){
+		$("#product-category-2 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	$("#product-category-3 span").on("click", function(){
+		$("#product-category-3 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	$("#product-category-4 span").on("click", function(){
+		$("#product-category-4 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	$("#product-category-5 span").on("click", function(){
+		$("#product-category-5 span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	
+	
 })
