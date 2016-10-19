@@ -97,6 +97,10 @@ $(function(){
 		$("#product-category-5 span").removeClass('filter-active');
 		$(this).addClass("filter-active");
 	})
-	
+	//	产品排序
+	$(".product-sort p").on("click", function(){
+		$(".product-sort p").removeClass('red');
+		$(this).addClass('red');
+	})
 	
 })
