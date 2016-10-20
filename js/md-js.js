@@ -102,5 +102,4 @@ $(function(){
 		$(".product-sort p").removeClass('red');
 		$(this).addClass('red');
 	})
-	
 })
