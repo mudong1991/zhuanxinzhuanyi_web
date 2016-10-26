@@ -28,6 +28,7 @@ a:focus{outline:none; -moz-outline-style: none;}
 .off{
 	display: none;
 }
+img{vertical-align:top;border:0;}
 .red{color: #E31939;}
 .theme-color{color:#EB5350}
 .bold{font-weight: bold;}

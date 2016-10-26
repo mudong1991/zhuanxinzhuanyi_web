@@ -35,6 +35,7 @@
 		<script type="text/javascript" src="js/slider.js" ></script>
 		<script type="text/javascript" src="js/onscroll.js"></script>
 		<script type="text/javascript" src="js/jquery.rollGallery_md.js"></script>
+		<script type="text/javascript" src="js/jquery.imagezoom.min.js" ></script>
 	</head>
 	<body>
 		<!--顶部信息-->
@@ -167,287 +168,35 @@
 			</div>
 		</div>
 		
-		<!--筛选-->
-		<div class="site-productFilter">
+		<!--产品显示及购买-->
+		<div class="goods">
 			<div class="site-container">
-				<ul class="product-filter clearfix">
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							品牌
+				<div class="col-xs-12 margin-top-16 clearfix goods-show">
+					<div class="col-xs-8 goods-show-images">
+						<div class="tb-booth tb-pic tb-s310">
+							<a href="images/01.jpg"><img src="images/01_mid.jpg" alt="美女" rel="images/01.jpg" class="jqzoom" /></a>
 						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-0">
-							<span class="filter-active">全部</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							品类
-						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-1">
-							<span class="filter-active">全部</span>
-							<span>配件</span>
-							<span>配件</span>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							系列
-						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-2">
-							<span class="filter-active">全部</span>
-							<span>文化石</span>
-							<span>文化石</span>
-							<span>文化石</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							规格
-						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-3">
-							<span class="filter-active">全部</span>
-							<span>150x150</span>
-							<span>小型砖</span>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							空间
-						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-4">
-							<span class="filter-active">全部</span>
-							<span>卧室*书房</span>
-							<span>厕所</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-							<span>楼兰</span>
-							<span>砖心砖意</span>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="col-xs-1 product-filter-category">
-							价格
-						</div>
-						<div class="col-xs-11 product-filter-option" id="product-category-5">
-							<span class="filter-active">全部</span>
-							<span>0-50</span>
-							<span>50-100</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
-		<!--排序-->
-		<div class="site-productSort">
-			<div class="site-container">
-				<div class="product-sort col-xs-12">
-					<p class="red">默认排序<span class="caret"></span></p>
-					<p>最新<span class="caret"></span></p>
-					<p>最热<span class="caret"></span></p>
-					<p>价格<span class="caret"></span></p>
-					<div class="pull-right">
-						<form action="" method="post" class="form-inline">
-							<input class="form-control input-sm" type="text" placeholder="搜索您需要的商品"/>
-							<input class="btn btn-sm btn-info" type="submit" value="搜索"/>
-						</form>
+					
+						<ul class="tb-thumb" id="thumblist">
+							<li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="images/01_small.jpg" mid="images/01_mid.jpg" big="images/01.jpg"></a></div></li>
+							<li><div class="tb-pic tb-s40"><a href="#"><img  src="images/02_small.jpg" mid="images/02_mid.jpg" big="images/02.jpg"></a></div></li>
+							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/03_small.jpg" mid="images/03_mid.jpg" big="images/03.jpg"></a></div></li>
+							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/04_small.jpg" mid="images/04_mid.jpg" big="images/04.jpg"></a></div></li>
+							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/05_small.jpg" mid="images/05_mid.jpg" big="images/05.jpg"></a></div></li>
+						</ul>
+						<script type="text/javascript">
+							$(".jqzoom").imagezoom();
+							$("#thumblist li a").click(function(){
+								$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+								$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+								$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+							});
+						
+						</script>
 					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!--商品列表-->
-		<div class="site-productList">
-			<div class="site-container">
-				<ul class="product-list clearfix">
-
-					<li class="col-xs-3">
-						<a href="goods.html">
-							<p class="product-info-img">
-								<img src="images/product-page-2.jpg" class="img-responsive " />
-								<span>
-									<strong>6.8</strong>
-									<br />
-									折
-								</span>
-							</p>
-							<p class="product-info-tile text-overflow-ellipsis">
-								EMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mm
-							</p>
-							<p class="product-info-price">
-								<strong>¥360.00元/片</strong>
-								<span>销量：3950 片</span>
-							</p>
-							<p class="product-info-pay">
-								<span class="product-info-paypal animate-element bottom-to-top"><i class="fa fa-paypal"></i>立即购买</span>
-								<span class="product-info-collect animate-element bottom-to-top" onclick="collectgo()"><i class="fa fa-heart"></i>收藏</span>
-							</p>
-						</a>
-					</li>
-					
-					<li class="col-xs-3">
-						<a href="#">
-							<p class="product-info-img">
-								<img src="images/product-page-2.jpg" class="img-responsive " />
-							</p>
-							<p class="product-info-tile text-overflow-ellipsis">
-								EMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mm
-							</p>
-							<p class="product-info-price">
-								<strong>¥360.00元/片</strong>
-								<span>销量：3950 片</span>
-							</p>
-							<p class="product-info-pay">
-								<span class="product-info-paypal animate-element bottom-to-top"><i class="fa fa-paypal"></i>立即购买</span>
-								<span class="product-info-collect animate-element bottom-to-top" onclick="collectgo()"><i class="fa fa-heart"></i>收藏</span>
-							</p>
-						</a>
-					</li>
-					<li class="col-xs-3">
-						<a href="#">
-							<p class="product-info-img">
-								<img src="images/product-page-2.jpg" class="img-responsive " />
-							</p>
-							<p class="product-info-tile text-overflow-ellipsis">
-								EMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mm
-							</p>
-							<p class="product-info-price">
-								<strong>¥360.00元/片</strong>
-								<span>销量：3950 片</span>
-							</p>
-							<p class="product-info-pay">
-								<span class="product-info-paypal animate-element bottom-to-top"><i class="fa fa-paypal"></i>立即购买</span>
-								<span class="product-info-collect animate-element bottom-to-top" onclick="collectgo()"><i class="fa fa-heart"></i>收藏</span>
-							</p>
-						</a>
-					</li>
-					<li class="col-xs-3">
-						<a href="#">
-							<p class="product-info-img">
-								<img src="images/product-page-2.jpg" class="img-responsive " />
-								<span>
-									<strong>6.8</strong>
-									<br />
-									折
-								</span>
-							</p>
-							<p class="product-info-tile text-overflow-ellipsis">
-								EMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mm
-							</p>
-							<p class="product-info-price">
-								<strong>¥360.00元/片</strong>
-								<span>销量：3950 片</span>
-							</p>
-							<p class="product-info-pay">
-								<span class="product-info-paypal animate-element bottom-to-top"><i class="fa fa-paypal"></i>立即购买</span>
-								<span class="product-info-collect animate-element bottom-to-top" onclick="collectgo()"><i class="fa fa-heart"></i>收藏</span>
-							</p>
-						</a>
-					</li>
-					<li class="col-xs-3">
-						<a href="#">
-							<p class="product-info-img">
-								<img src="images/product-page-2.jpg" class="img-responsive " />
-								<span>
-									<strong>6.8</strong>
-									<br />
-									折
-								</span>
-							</p>
-							<p class="product-info-tile text-overflow-ellipsis">
-								EMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mmEMC81005 超晶石 800*800mm
-							</p>
-							<p class="product-info-price">
-								<strong>¥360.00元/片</strong>
-								<span>销量：3950 片</span>
-							</p>
-							<p class="product-info-pay">
-								<span class="product-info-paypal animate-element bottom-to-top"><i class="fa fa-paypal"></i>立即购买</span>
-								<span class="product-info-collect animate-element bottom-to-top" onclick="collectgo()"><i class="fa fa-heart"></i>收藏</span>
-							</p>
-						</a>
-					</li>
-					
-				</ul>
-				<div id="product-page">
-					<ul class="pagination pagination-md" >
-					  <li><a href="#">上一页</a></li>
-					  <li class="active"><a href="#">1</a></li>
-					  <li class="disabled"><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					  <li><a href="#">下一页</a></li>
-					</ul>
+					<div class="col-xs-4">
+						2
+					</div>
 				</div>
 			</div>
 		</div>
@@ -487,6 +236,7 @@
 				</ul>
 			</div>
 		</div>
+		
 		<!--网页底部-->
 		<div class="site-footer">
 			<div class="site-container">
