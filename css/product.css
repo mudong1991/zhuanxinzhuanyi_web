@@ -41,19 +41,35 @@ background: transparent url(../images/tag_new.png) no-repeat; color: white; padd
 
 /*产品详情页样式---------------------------------------------------------------------------------------------------------------*/
 .goods-show{border: 1px solid red; height: 48rem;}
-.tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
-.tb-pic a img{vertical-align:middle;}
-.tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
-.tb-thumb{margin:10px 0 0;overflow:hidden;}
-.tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:42px;margin:0 6px 0 0;overflow:hidden;padding:1px;}
-.tb-s310, .tb-s310 a{height:310px;width:310px;}
-.tb-s310, .tb-s310 img{max-height:310px;max-width:310px;}
-.tb-s310 a{*font-size:271px;}
-.tb-s40 a{*font-size:35px;}
-.tb-s40, .tb-s40 a{height:40px;width:40px;}
-.tb-booth{border:1px solid #CDCDCD;position:relative;z-index:1;}
-.tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:40px;padding:2px;}
-.tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
-.tb-thumb li div{border:1px solid #CDCDCD;}
-div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
-div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+/*商品图片展示*/
+#preview{ float:none; margin:20px auto; text-align:center; width:400px; position: relative;}
+.jqzoom{ width:350px; height:350px; position:relative;}
+.zoomdiv{ left:0px; height:400px; width:400px;}
+.list-h li{ float:left;}
+#spec-n5{width:350px; height:56px; padding-top:6px; overflow:hidden;}
+#spec-left{ background:url(images/left.gif) no-repeat; width:10px; height:45px; float:left; cursor:pointer; margin-top:5px;}
+#spec-right{background:url(images/right.gif) no-repeat; width:10px; height:45px; float:left;cursor:pointer; margin-top:5px;}
+#spec-list{ width:325px; float:left; overflow:hidden; margin-left:2px; display:inline;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:62px;}
+#spec-list ul li img{ padding:2px ; border:1px solid #ccc; width:50px; height:50px;}
+
+.jqzoom{position:relative;padding:0;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:400px;height:400px;background:url(i/loading.gif) #fff no-repeat center center;border:1px solid #e4e4e4;display:none;text-align:center;overflow: hidden;}
+.bigimg{width:800px;height:800px;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:50px;height:50px;border:1px solid #aaa;background:#FEDE4F 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:move;}
+#spec-list{ position:relative; width:322px; margin-right:6px;}
+#spec-list div{ margin-top:0;margin-left:-30px; *margin-left:0;}
+/*购买商品*/
+.goods-show-buy{margin-top: 20px;height: 41rem; background-color: #F6F6F6; border-radius: 4px; 
+box-shadow: 0px 0px 4px rgba(0,0,0,0.25);}
+.goods-price{background-color: #FDBC70; line-height: 32px;padding: 10px 20px; font-size: 16px; color: #E31939; }
+.goods-show-buy>div{margin-bottom: 20px;}
+.goods-show-buy>div label{line-height: 24px;}
+.goods-show-buy h3{max-height: 56px; overflow: hidden;}
+.goods-model{max-height: 56px; }
+.goods-model li{display: inline-block;line-height: 20px;padding: 0 6px; cursor: pointer; border: 1px solid #CCCCCC; transition: border 0.5s;}
+.goods-model .active{border: 1px solid #E31939; background: transparent url(../images/pro_detail_selected.png) no-repeat right top;}
+.goods-count input, .goods-count button{display: inline-block; }
+.goods-count button{margin-top: -4px;}
+#goods-count{width: 8rem;}
+.goods-buy button{margin-left: 30px; margin-top: 20px; padding:10px 20px;}

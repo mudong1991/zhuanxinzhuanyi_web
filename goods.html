@@ -34,8 +34,7 @@
 		<script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
 		<script type="text/javascript" src="js/slider.js" ></script>
 		<script type="text/javascript" src="js/onscroll.js"></script>
-		<script type="text/javascript" src="js/jquery.rollGallery_md.js"></script>
-		<script type="text/javascript" src="js/jquery.imagezoom.min.js" ></script>
+		<script type="text/javascript" src="js/goods-base.js" ></script>
 	</head>
 	<body>
 		<!--顶部信息-->
@@ -171,33 +170,120 @@
 		<!--产品显示及购买-->
 		<div class="goods">
 			<div class="site-container">
-				<div class="col-xs-12 margin-top-16 clearfix goods-show">
-					<div class="col-xs-8 goods-show-images">
-						<div class="tb-booth tb-pic tb-s310">
-							<a href="images/01.jpg"><img src="images/01_mid.jpg" alt="美女" rel="images/01.jpg" class="jqzoom" /></a>
+				<div class="col-xs-12 margin-top-10 clearfix goods-show">
+					<div class="col-xs-7 goods-show-images">
+						<div id=preview>
+							<div class=jqzoom id=spec-n1 onClick="window.open('index.html')"><IMG height=350
+							src="images/goods4.jpg" jqimg="images/goods4.jpg" width=350>
+							</div>
+							<div id=spec-n5>
+								<div class=control id=spec-left>
+									<img src="images/left.gif" />
+								</div>
+								<div id=spec-list>
+									<ul class=list-h>
+										<li><img src="images/goods1.jpg"> </li>
+										<li><img src="images/goods2.jpg"> </li>
+										<li><img src="images/goods3.jpg"> </li>
+										<li><img src="images/goods4.jpg"> </li>
+										<li><img src="images/goods1.jpg"> </li>
+										<li><img src="images/goods2.jpg"> </li>
+										<li><img src="images/goods3.jpg"> </li>
+										<li><img src="images/goods4.jpg"> </li>
+									</ul>
+								</div>
+								<div class=control id=spec-right>
+									<img src="images/right.gif" />
+								</div>
+								
+						    </div>
 						</div>
-					
-						<ul class="tb-thumb" id="thumblist">
-							<li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="images/01_small.jpg" mid="images/01_mid.jpg" big="images/01.jpg"></a></div></li>
-							<li><div class="tb-pic tb-s40"><a href="#"><img  src="images/02_small.jpg" mid="images/02_mid.jpg" big="images/02.jpg"></a></div></li>
-							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/03_small.jpg" mid="images/03_mid.jpg" big="images/03.jpg"></a></div></li>
-							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/04_small.jpg" mid="images/04_mid.jpg" big="images/04.jpg"></a></div></li>
-							<li><div class="tb-pic tb-s40"><a href="#"><img src="images/05_small.jpg" mid="images/05_mid.jpg" big="images/05.jpg"></a></div></li>
-						</ul>
-						<script type="text/javascript">
-							$(".jqzoom").imagezoom();
-							$("#thumblist li a").click(function(){
-								$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
-								$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
-								$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
-							});
 						
-						</script>
+						<SCRIPT type=text/javascript>
+							$(function(){			
+							   $(".jqzoom").jqueryzoom({
+									xzoom:400,
+									yzoom:400,
+									offset:10,
+									position:"right",
+									preload:1,
+									lens:1
+								});
+								$("#spec-list").jdMarquee({
+									deriction:"left",
+									width:350,
+									height:56,
+									step:2,
+									speed:4,
+									delay:10,
+									control:true,
+									_front:"#spec-right",
+									_back:"#spec-left"
+								});
+								$("#spec-list img").bind("mouseover",function(){
+									var src=$(this).attr("src");
+									$("#spec-n1 img").eq(0).attr({
+										src:src.replace("\/n5\/","\/n1\/"),
+										jqimg:src.replace("\/n5\/","\/n0\/")
+									});
+									$(this).css({
+										"border":"2px solid #ff6600",
+										"padding":"1px"
+									});
+								}).bind("mouseout",function(){
+									$(this).css({
+										"border":"1px solid #ccc",
+										"padding":"2px"
+									});
+								});				
+							})
+						</SCRIPT>
+						<script type="text/javascript" src="js/goods-lib.js" ></script>
+						<script type="text/javascript" src="js/goods-zzsc.js" ></script>
 					</div>
-					<div class="col-xs-4">
-						2
+					<div class="col-xs-5 goods-show-buy">
+							<h3>楼兰瓷砖地砖 厨房卫生间仿古砖地砖 卫生间防滑地砖墙砖333*333 楼兰古韵 </h3>
+							<div class="goods-price">
+								<p>市场价：<span class="text-line-through">¥6.20</span></p>
+								<p>特卖价：<strong class="text-big red">¥4.20</strong></p>
+							</div>
+							<div class="clearfix">
+								<label class="col-xs-2 control-label">规格</label>
+								<div class="col-xs-10 goods-model">
+									<ul>
+										<li>400x400</li>
+										<li>500x500</li>
+										<li>600x600</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix">
+								<label  class="col-xs-2 control-label">数量</label>
+								<div class="col-xs-10 goods-count">
+									<button class="btn btn-sm btn-default" id="reduce-goods">-</button>
+								    <input type="text" class="form-control input-sm text-center" name="count"  onkeyup="if(this.value.length==1)
+								    	{this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')};" 
+								    	onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}
+								    	else{this.value=this.value.replace(/\D/g,'')};" id="goods-count"/>
+								    <button class="btn btn-sm btn-default" id="add-goods">+</button>
+								    <span class="red">库存(  <span class="goods-counts-total">1733</span>  )</span>
+								</div>
+							</div>
+							<div class="clearfix goods-buy">
+								<button class="btn  btn-info"><i class="fa fa-paypal"></i>  立即购买</button>
+								<button class="btn  btn-danger"><i class="fa fa-shopping-cart"></i>  加入购物车</button>
+								<button class="btn btn-default"><i class="fa fa-heart"></i>  收藏</button>
+							</div>
+
 					</div>
 				</div>
+			</div>
+		</div>
+		
+		<!--产品参数介绍-->
+		<div class="goodsinfo">
+			<div class="site-container">
+				
 			</div>
 		</div>
 		

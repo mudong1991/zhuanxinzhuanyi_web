@@ -102,4 +102,45 @@ $(function(){
 		$(".product-sort p").removeClass('red');
 		$(this).addClass('red');
 	})
+	
+	/*
+	 *goods.html的js脚本
+	 * ******************************************************************/
+	//商品型号选择
+	$(".goods-model li:first-child").addClass("active");
+	$(".goods-model li").on("click", function (){
+		$(".goods-model li").removeClass("active");
+		$(this).addClass("active");
+	})
+	//	商品数量加减
+	$("#goods-count").val(1);
+	
+	var goods_count_total = $(".goods-counts-total").text();
+	goods_count_total = parseInt(goods_count_total);
+	$("#add-goods").on("click", function (){
+		var i = $("#goods-count").val();
+		i = parseInt(i)+1;
+		if(i > goods_count_total){
+			i = goods_count_total;
+		}
+		$("#goods-count").val(i);
+	})
+	$("#reduce-goods").on("click", function (){
+		var i = $("#goods-count").val();
+		i = parseInt(i) - 1;
+		if(i < 1){
+			i = 1;
+		}
+		$("#goods-count").val(i);
+	})
+	$("#goods-count").on("keyup", function (){
+		var i = $("#goods-count").val();
+		i = parseInt(i);
+		if(i > goods_count_total){
+			$("#goods-count").val(goods_count_total);
+		}
+		if(i < 1){
+			$("#goods-count").val(1);
+		}
+	})
 })
