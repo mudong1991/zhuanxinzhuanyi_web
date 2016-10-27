@@ -111,10 +111,14 @@ $(function(){
 	$(".goods-model li").on("click", function (){
 		$(".goods-model li").removeClass("active");
 		$(this).addClass("active");
+		
+		var xh_img_src = $(this).children("img").attr("src");
+		$("#spec-n1 img").attr("src", xh_img_src);
+		$("#spec-n1 img").attr("jqimg", xh_img_src);
 	})
+	
 	//	商品数量加减
 	$("#goods-count").val(1);
-	
 	var goods_count_total = $(".goods-counts-total").text();
 	goods_count_total = parseInt(goods_count_total);
 	$("#add-goods").on("click", function (){

@@ -169,12 +169,12 @@
 		
 		<!--产品显示及购买-->
 		<div class="goods">
-			<div class="site-container">
+			<div class="site-container clearfix">
 				<div class="col-xs-12 margin-top-10 clearfix goods-show">
 					<div class="col-xs-7 goods-show-images">
 						<div id=preview>
-							<div class=jqzoom id=spec-n1 onClick="window.open('index.html')"><IMG height=350
-							src="images/goods4.jpg" jqimg="images/goods4.jpg" width=350>
+							<div class=jqzoom id=spec-n1 >
+								<IMG height=350 src="images/goods1.jpg" jqimg="images/goods1.jpg" width=350 />
 							</div>
 							<div id=spec-n5>
 								<div class=control id=spec-left>
@@ -248,12 +248,17 @@
 								<p>特卖价：<strong class="text-big red">¥4.20</strong></p>
 							</div>
 							<div class="clearfix">
-								<label class="col-xs-2 control-label">规格</label>
+								<label class="col-xs-2 control-label">已销售</label>
+								<div class="col-xs-10 goods-model">
+									10234
+								</div>
+							</div>
+							<div class="clearfix">
+								<label class="col-xs-2 control-label">型号</label>
 								<div class="col-xs-10 goods-model">
 									<ul>
-										<li>400x400</li>
-										<li>500x500</li>
-										<li>600x600</li>
+										<li><img src="images/goods-xh1.jpg" class="img-responsive"></li>
+										<li><img src="images/goods-xh2.jpg" class="img-responsive"></li>
 									</ul>
 								</div>
 							</div>
@@ -282,8 +287,74 @@
 		
 		<!--产品参数介绍-->
 		<div class="goodsinfo">
-			<div class="site-container">
-				
+			<div class="site-container clearfix ">
+				<div class="col-xs-3 padding-0">
+					1
+				</div>
+				<div class="col-xs-9 padding-0">
+					<ul id="goodsTab" class="nav nav-tabs">
+					    <li class="active">
+		   					<a href="#goodsDetail" data-toggle="tab">商品详情</a>
+					    </li>
+					    <li >
+							<a href="#goodsParameter" data-toggle="tab">产品参数</a>
+						</li>
+						<li>
+							<a href="#goodsComment" data-toggle="tab">客户评论（<span class="red">21</span>）</a>
+						</li>
+						<li>
+							<a href="#goodsDeal" data-toggle="tab">成交记录</a>
+						</li>
+						<li>
+							<a href="#goodsProblem" data-toggle="tab">常见问题</a>
+						</li>
+					</ul>
+					<div id="goodsTabContent" class="tab-content">
+					   <div class="tab-pane fade in active" id="goodsDetail">
+					      	这里填充商品详情相关图片和文字
+					   </div>
+					   <div class="tab-pane fade" id="goodsParameter">
+					      	<table class="table table-hover table-responsive table-bordered ">
+					      		<thead>
+					      			<tr>
+					      				<th rowspan="2" class="col-xs-2 goods-table-img-head">图片</th>
+					      				<th colspan="7">规格参数</th>
+					      			</tr>
+					      			<tr>
+					      				<th class="col-xs-1">编号</th>
+					      				<th class="col-xs-1">规格</th>
+					      				<th class="col-xs-1">包装（片/箱）</th>
+					      				<th class="col-xs-1">重量（kg/箱）</th>
+					      				<th class="col-xs-1">片/方</th>
+					      				<th class="col-xs-1">等级</th>
+					      				<th class="col-xs-1">质面</th>
+					      			</tr>
+					      		</thead>
+					      		<tbody>
+					      			<tr>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      				<td>1</td>
+					      			</tr>
+					      		</tbody>
+					      	</table>
+					   </div>
+					   <div class="tab-pane fade" id="goodsComment">
+					      <p>3</p>
+					   </div>
+					   <div class="tab-pane fade" id="goodsDeal">
+					      <p>4</p>
+					   </div>
+					   <div class="tab-pane fade" id="goodsProblem">
+					      <p>5</p>
+					   </div>
+					</div>
+				</div>
 			</div>
 		</div>
 		

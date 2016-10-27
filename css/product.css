@@ -40,7 +40,7 @@ background: transparent url(../images/tag_new.png) no-repeat; color: white; padd
 #product-page .active a{background: #FA731A !important; border: 1px solid #FA731A;}
 
 /*产品详情页样式---------------------------------------------------------------------------------------------------------------*/
-.goods-show{border: 1px solid red; height: 48rem;}
+.goods-show{border: 1px solid #CCCCCC; height: 47rem; }
 /*商品图片展示*/
 #preview{ float:none; margin:20px auto; text-align:center; width:400px; position: relative;}
 .jqzoom{ width:350px; height:350px; position:relative;}
@@ -63,13 +63,20 @@ background: transparent url(../images/tag_new.png) no-repeat; color: white; padd
 .goods-show-buy{margin-top: 20px;height: 41rem; background-color: #F6F6F6; border-radius: 4px; 
 box-shadow: 0px 0px 4px rgba(0,0,0,0.25);}
 .goods-price{background-color: #FDBC70; line-height: 32px;padding: 10px 20px; font-size: 16px; color: #E31939; }
-.goods-show-buy>div{margin-bottom: 20px;}
+.goods-show-buy>div{margin-bottom: 10px;}
 .goods-show-buy>div label{line-height: 24px;}
+.goods-show-buy>div>div{line-height: 24px;}
 .goods-show-buy h3{max-height: 56px; overflow: hidden;}
 .goods-model{max-height: 56px; }
-.goods-model li{display: inline-block;line-height: 20px;padding: 0 6px; cursor: pointer; border: 1px solid #CCCCCC; transition: border 0.5s;}
+.goods-model li{display: inline-block; cursor: pointer; border: 1px solid #CCCCCC; transition: border 0.5s; width: 60px; height: 60px;
+padding: 6px;}
 .goods-model .active{border: 1px solid #E31939; background: transparent url(../images/pro_detail_selected.png) no-repeat right top;}
 .goods-count input, .goods-count button{display: inline-block; }
-.goods-count button{margin-top: -4px;}
+.goods-count button{margin-top: -2px;}
 #goods-count{width: 8rem;}
-.goods-buy button{margin-left: 30px; margin-top: 20px; padding:10px 20px;}
+.goods-buy button{margin-left: 30px;  padding:10px 20px;}
+/*商品参数*/
+.goodsinfo{margin: 20px 0px;}
+#goodsTabContent{margin-top: 20px;}
+#goodsParameter table td, #goodsParameter table th{text-align: center !important;}
+.goods-table-img-head{line-height: 60px !important;}
