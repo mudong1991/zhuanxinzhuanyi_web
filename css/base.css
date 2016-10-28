@@ -29,12 +29,16 @@ a:focus{outline:none; -moz-outline-style: none;}
 	display: none;
 }
 img{vertical-align:top;border:0;}
+i[class *= 'fa']{margin-right: 4px;}
 .text-line-through{text-decoration: line-through;}
 .text-big{font-size: 32px;}
 .red{color: #E31939;}
 .theme-color{color:#EB5350}
+.bg-yellow-color{background-color: #FF6600;}
+.font-yellow-color{color: #FF6600;}
 .bold{font-weight: bold;}
 .padding-tb-10{padding: 10px 0px;}
+.padding-lr-10{padding: 0 10px;}
 .padding-0{padding: 0;}
 .margin-top-10{margin-top: 10px;}
 .margin-left-10{margin-left: 10px;}
@@ -42,5 +46,6 @@ img{vertical-align:top;border:0;}
 .margin-left-16{margin-left: 16px;}
 .margin-top-22{margin-top: 22px;}
 .margin-left-22{margin-left: 22px;}
+.div-center{margin: 0 auto;}
 .text-overflow-ellipsis{white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;}
 em{font-weight: normal;font-style: normal; padding: 0 8px; color: #838282;}

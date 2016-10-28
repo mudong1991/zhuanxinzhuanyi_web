@@ -75,8 +75,33 @@ padding: 6px;}
 .goods-count button{margin-top: -2px;}
 #goods-count{width: 8rem;}
 .goods-buy button{margin-left: 30px;  padding:10px 20px;}
-/*商品参数*/
+/*产品详情*/
+#goodsDetail{}
+#goodsDetail img{max-width: 100%;}
+/*产品参数*/
 .goodsinfo{margin: 20px 0px;}
-#goodsTabContent{margin-top: 20px;}
+#goodsTabContent{border: 1px solid #CCCCCC; border-top: none; padding: 10px;}
 #goodsParameter table td, #goodsParameter table th{text-align: center !important;}
-.goods-table-img-head{line-height: 60px !important;}
+#goodsParameter table td{line-height: 60px;}
+.goods-parameter-img-head{line-height: 60px !important;}
+.goods-parameter-img-td img{height: 60px; margin: 0 auto;}
+.goods-parameter-head1{background: rgba(0,0,0, 0.35);}
+.goods-parameter-head2{background: rgba(0,0,0,0.25);}
+/*客户评论*/
+#goodsComment div[class*=panel-body] strong{font-size: 66px; line-height: 110px; color: #FF6600;}
+#goodsComment i[class="fa fa-star"]{color: #FF6600;}
+.goods-comment-list li{border-bottom: 1px solid #CCCCCC; margin-bottom: 10px;}
+.goods-comment-progress div[class*="progress"]{height: 16px;}
+.goods-comment-progress div[class*="progress-bar"]{height: 16px;}
+.goods-comment-avatar span{height: 70px; width: 70px;margin: 0 auto; border: 1px solid #CCCCCC;display: block;}
+.goods-comment-phrase li{display:inline-block; min-width: 60px; height: 32px; margin-top: 8px; background: #F3F3F3; text-align: center;cursor: pointer; 
+line-height: 32px; transition: all 0.5s; padding: 0 4px;}
+.goods-comment-phrase li:hover{background:#FF6600;border-radius: 4px; color: white;}
+.goods-comment-content img{max-height: 100px; max-width: 100px;}
+/*左侧推荐商品*/
+.goods-recommend-list li{margin-bottom: 10px;}
+.goods-recommend-list li a{display: block; width: 80%; margin: 0 auto; text-align: center; border: 1px solid #CCCCCC; transition: all 0.5s;}
+.goods-recommend-list li a p{margin: 6px;}
+.goods-recommend-list li a:hover{text-decoration: none; box-shadow: 0px 0px 4px rgba(0,0,0,0.25); transform: scale(1.06);}
+.goods-recommend-list-img{height: 120px; width: 120px;margin: 0 auto !important;}
+.goods-recommend-list-img img{height: 120px; width: 120px;}
