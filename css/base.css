@@ -46,6 +46,7 @@ i[class *= 'fa']{margin-right: 4px;}
 .margin-left-16{margin-left: 16px;}
 .margin-top-22{margin-top: 22px;}
 .margin-left-22{margin-left: 22px;}
+.btn-site{background-color: #EB5350 !important; color:white}
 .div-center{margin: 0 auto;}
 .text-overflow-ellipsis{white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;}
 em{font-weight: normal;font-style: normal; padding: 0 8px; color: #838282;}

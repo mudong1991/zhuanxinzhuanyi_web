@@ -43,6 +43,9 @@
 .nav-list-ul a:hover{background: #E31939; text-decoration: none;}
 .nav-list-ul a img{position: absolute;}
 
+/*位置*/
+.site-location{margin: 10px 0px;}
+
 /*专属服务*/
 .site-service{margin-bottom: 20px;}
 .service{height: 180px; width: 180px; border: 1px solid #D5D5D5; margin: 0 auto; border-radius: 50%;padding-top:12px; cursor: pointer; transition:all 0.5s;}
