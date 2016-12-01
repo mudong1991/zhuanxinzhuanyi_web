@@ -73,33 +73,28 @@ $(function(){
 	 *product.html的js脚本
 	 * ******************************************************************/
 	//产品筛选
-	$("#product-category-0 span").on("click", function(){
-		$("#product-category-0 span").removeClass('filter-active');
-		$(this).addClass("filter-active");
-	})
-	$("#product-category-1 span").on("click", function(){
-		$("#product-category-1 span").removeClass('filter-active');
-		$(this).addClass("filter-active");
-	})
-	$("#product-category-2 span").on("click", function(){
-		$("#product-category-2 span").removeClass('filter-active');
-		$(this).addClass("filter-active");
-	})
-	$("#product-category-3 span").on("click", function(){
-		$("#product-category-3 span").removeClass('filter-active');
-		$(this).addClass("filter-active");
-	})
-	$("#product-category-4 span").on("click", function(){
-		$("#product-category-4 span").removeClass('filter-active');
-		$(this).addClass("filter-active");
-	})
-	$("#product-category-5 span").on("click", function(){
-		$("#product-category-5 span").removeClass('filter-active');
+	$(".product-filter-option span").on("click", function(){
+		$(this).parent().children("span").removeClass('filter-active');
 		$(this).addClass("filter-active");
 	})
 	//	产品排序
 	$(".product-sort p").on("click", function(){
 		$(".product-sort p").removeClass('red');
+		$(this).addClass('red');
+	})
+	
+	
+	/*
+	 *case.html的js脚本
+	 * ******************************************************************/
+	//案例筛选
+	$(".case-filter-option span").on("click", function(){
+		$(this).parent().children("span").removeClass('filter-active');
+		$(this).addClass("filter-active");
+	})
+	//案例排序
+	$(".case-sort p").on("click", function(){
+		$(".case-sort p").removeClass('red');
 		$(this).addClass('red');
 	})
 	

@@ -1,0 +1,25 @@
+/*案例效果---------------------------------------------------------------------------------------------------------------*/
+/*筛选*/
+.case-filter{border: 1px solid #CCCCCC; }
+.case-filter li>div{min-height: 4rem; }
+.case-filter li{background: transparent url(../images/goods_block.gif) repeat;}
+.case-filter-category{text-align: center; padding: 10px 0px;}
+.case-filter-option{padding: 0px 10px; background: white; }
+.case-filter-option span{display: inline-block; width: 6rem; height: 2.6rem; text-align: center; line-height: 2.6rem;
+cursor: pointer;margin: 6px 0px; transition: all 0.5s;}
+.filter-active{background-color: #FF6600; border-radius: 2px; box-shadow: 0px 0px 4px rgba(0,0,0,0.25); color: white;}
+.case-filter-option span:hover{background-color: #D5D5D5; border-radius: 2px; box-shadow: 0px 0px 4px rgba(0,0,0,0.25);}
+/*排序*/
+.case-sort{height: 4.2rem; line-height: 4.2rem; background: #F5F5F5; border: 1px solid #CCCCCC;}
+.case-sort p{display: inline-block; cursor: pointer; width: 6rem; height: 100%; position: relative; text-align: center;margin-right: 10px;
+transition: all 0.5s;}
+/*案例列表*/
+.case-list{padding: 0; width: 1240px;}
+.case-list li{width: 286px; height: 362px;margin: 20px 15px 0px 0px; border: 1px solid #CCCCCC; display: inline-block; vertical-align: top;}
+.case-list li a{display: block; transition: all 0.5s;}
+.case-list li a:hover{text-decoration: none; background: #FA731A; color: white;}
+.case-list li a img{height: 300px; width: 284px;}
+.case-list li a .title{padding: 10px; display: block; }
+.case-list li a .title p{line-height: 20px; margin: 0;}
+#case-page{margin: 0 auto !important; text-align: center;}
+#case-page .active a{background: #FA731A !important; border: 1px solid #FA731A;}
