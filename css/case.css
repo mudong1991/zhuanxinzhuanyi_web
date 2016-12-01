@@ -23,3 +23,22 @@ transition: all 0.5s;}
 .case-list li a .title p{line-height: 20px; margin: 0;}
 #case-page{margin: 0 auto !important; text-align: center;}
 #case-page .active a{background: #FA731A !important; border: 1px solid #FA731A;}
+
+/*案例效果详情样式
+ * -------------------------------------------------------
+ */
+/*左侧效果展示图*/
+.site-caseDetail{margin-bottom: 20px;}
+.case-bg-img{height: 600px;margin: 0; padding: 0; cursor: pointer;}
+.case-bg-img img{height: 600px; width: 100%; }
+.case-sm-img{height: 100px; margin: 0; padding: 0; position: relative; background: #F6F6F6; margin-top: 10px;}
+.case-sm-img a{position: absolute; top: 0; display: block; width: 120px; height: 100px;transition: all 0.5s;line-height: 90px; text-align: center; font-size: 60px;}
+.case-sm-img .pre{left: 0;}
+.case-sm-img .next{right: 0;}
+.case-detail-listContent{position: relative;margin-left: 120px; width: 660px; overflow: hidden; height: 100px;}
+.case-detail-list{position: absolute; left: 0px; top: 0px;}
+.case-detail-list li{display: inline-block; width: 128px; height: 100px; cursor: pointer;}
+.case-detail-list li.active img{border: 2px solid #FF6600;}
+.case-detail-list li img{width: 120px; height: 100px;}
+/*右侧说明*/
+.case-detail-intro{min-height: 600px;}

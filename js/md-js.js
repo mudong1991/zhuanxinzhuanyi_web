@@ -99,6 +99,75 @@ $(function(){
 	})
 	
 	/*
+	 *case-detail的js脚本 
+	 * */
+	$(".case-detail-list li").eq(0).addClass("active");
+	function case_detail(direction="next"){
+		//获取当前active的序列
+		var move_width_unit = parseInt($(".case-detail-list li").outerWidth()) + 3;
+		var current_active_index = 0;
+		var move_index = 0;
+		var current_left_width = parseInt($(".case-detail-list").css("left"));
+		var move_width = 0;
+		$(".case-detail-list li").each(function (index, domEle){
+			if($(this).hasClass("active")){
+				current_active_index = index;
+			}
+		});
+		
+		if (direction == "next"){
+			// 判断是否超过总个数
+			if(current_active_index+1 > $(".case-detail-list li").length - 1){
+				move_index = 0;
+				move_width = 0;
+			}else{
+				move_index = current_active_index + 1;
+				move_width = (current_left_width - move_width_unit ) + "px";
+			}
+			
+		}else{
+			// 判断是否小于0
+			if(current_active_index-1 < 0){
+				move_index = 0;
+				move_width = 0;
+			}else{
+				move_index = current_active_index - 1;
+				move_width = (current_left_width + move_width_unit) + "px";
+			}
+			
+		}
+		//操作样式
+		$(".case-detail-list li").removeClass("active");
+		var next_case_detail = $(".case-detail-list li").eq(move_index);
+		next_case_detail.addClass("active");
+		//获取当前li中img的src属性
+		var current_src = next_case_detail.children('img').attr("src");
+		// 设置大图src
+		$(".case-bg-img img").attr("src", current_src);
+		// 移动ul
+		console.log(move_width);
+		$(".case-detail-list").animate({"left": move_width}, 200);
+	}
+	$(".case-sm-img .next").on("click", function(){
+		case_detail("next");
+	})
+	$(".case-sm-img .pre").on("click", function(){
+		case_detail("pre");
+	})
+	$(".case-detail-list li").on("click", function(){
+		$(".case-detail-list li").removeClass("active");
+		$(this).addClass("active");
+		//		获取当前li中img的src属性
+		var current_src = $(this).children('img').attr("src");
+		// 设置大图src
+		$(".case-bg-img img").attr("src", current_src);
+	})
+	$(".case-bg-img").on("click", function(){
+		case_detail("next");
+	})
+	
+	
+	/*
 	 *goods.html的js脚本
 	 * ******************************************************************/
 	//商品型号选择
