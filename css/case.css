@@ -42,5 +42,6 @@ transition: all 0.5s;}
 .case-detail-list li img{width: 120px; height: 100px;}
 /*右侧说明*/
 .case-detail-intro{min-height: 600px; padding: 0 10px;}
-
+.case-detail-label a{display: inline-block; padding: 4px 14px; background: #CCCCCC; margin-bottom: 10px; transition: all 0.5s;}
+.case-detail-label a:hover{text-decoration: none; color: white; background: #EC971F;}
 .design-contact-form input[type="submit"]{width: 246px;}
