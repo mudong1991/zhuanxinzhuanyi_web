@@ -122,7 +122,7 @@ $(function(){
 				move_width = 0;
 			}else{
 				move_index = current_active_index + 1;
-				move_width = (current_left_width - move_width_unit ) + "px";
+				move_width = current_left_width - move_width_unit;
 			}
 			
 		}else{
@@ -132,10 +132,12 @@ $(function(){
 				move_width = 0;
 			}else{
 				move_index = current_active_index - 1;
-				move_width = (current_left_width + move_width_unit) + "px";
+				move_width = current_left_width + move_width_unit;
 			}
 			
 		}
+		move_width = move_width >= 0 ? 0 : move_width;
+		move_width = move_width + "px";
 		//操作样式
 		$(".case-detail-list li").removeClass("active");
 		var next_case_detail = $(".case-detail-list li").eq(move_index);
@@ -145,7 +147,6 @@ $(function(){
 		// 设置大图src
 		$(".case-bg-img img").attr("src", current_src);
 		// 移动ul
-		console.log(move_width);
 		$(".case-detail-list").animate({"left": move_width}, 200);
 	}
 	$(".case-sm-img .next").on("click", function(){
