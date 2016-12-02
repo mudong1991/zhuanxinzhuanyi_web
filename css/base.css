@@ -32,6 +32,7 @@ img{vertical-align:top;border:0;}
 i[class *= 'fa']{margin-right: 4px;}
 .text-line-through{text-decoration: line-through;}
 .text-big{font-size: 32px;}
+.text-indent-2{text-indent: 2em;}
 .red{color: #E31939;}
 .theme-color{color:#EB5350}
 .bg-yellow-color{background-color: #FF6600;}
@@ -40,10 +41,13 @@ i[class *= 'fa']{margin-right: 4px;}
 .padding-tb-10{padding: 10px 0px;}
 .padding-lr-10{padding: 0 10px;}
 .padding-0{padding: 0;}
+.padding-10{padding: 10px;}
 .margin-top-10{margin-top: 10px;}
+.margin-right-10{margin-right: 10px;}
 .margin-left-10{margin-left: 10px;}
 .margin-top-16{margin-top: 16px;}
 .margin-left-16{margin-left: 16px;}
+.margin-right-16{margin-right: 16px;}
 .margin-top-22{margin-top: 22px;}
 .margin-left-22{margin-left: 22px;}
 .margin-bottom-10{margin-bottom: 10px;}
@@ -51,3 +55,4 @@ i[class *= 'fa']{margin-right: 4px;}
 .div-center{margin: 0 auto;}
 .text-overflow-ellipsis{white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis;overflow: hidden;}
 em{font-weight: normal;font-style: normal; padding: 0 8px; color: #838282;}
+.border-ccc{border: 1px solid #ccc;}

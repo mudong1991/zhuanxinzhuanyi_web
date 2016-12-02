@@ -41,4 +41,6 @@ transition: all 0.5s;}
 .case-detail-list li.active img{border: 2px solid #FF6600;}
 .case-detail-list li img{width: 120px; height: 100px;}
 /*右侧说明*/
-.case-detail-intro{min-height: 600px;}
+.case-detail-intro{min-height: 600px; padding: 0 10px;}
+
+.design-contact-form input[type="submit"]{width: 246px;}
