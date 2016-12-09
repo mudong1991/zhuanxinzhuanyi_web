@@ -1,0 +1,6 @@
+/*关于账户所有页面的css样式-----------------------*/
+.site-login .site-container{min-height: 600px; position: relative; background: transparent url(../images/login-bg.jpg) no-repeat top; background-size: 1200px 600px;}
+.login{width: 400px; position: absolute; right: 10%; top: 20%; padding-top: 0px; background: rgba(255,255,255, 0.8) !important; border: none !important;}
+.login-form h3{border-bottom: 2px solid #CCCCCC; padding-bottom: 10px;}
+.login-form .input-group{margin: 20px 0px;}
+.login-form .input-group input[type="submit"]{display: block; width: 360px !important;}

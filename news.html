@@ -31,10 +31,12 @@
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/base.js" ></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
 		<script type="text/javascript" src="js/slider.js" ></script>
 		<script type="text/javascript" src="js/onscroll.js"></script>
 		<script type="text/javascript" src="js/jquery.rollGallery_md.js"></script>
+		
 	</head>
 	<body>
 		<!--顶部信息-->
@@ -150,7 +152,7 @@
 					<a href="index.html" >首页</a>
 					<a href="product.html">产品中心</a>
 					<a href="case.html">案例效果</a>
-					<a href="news.html" class="nav-active">新闻中心</a>
+					<a href="news.html?active_news=0" class="nav-active">新闻中心</a>
 					<a href="company.html">公司简介</a>
 					<a href="agency.html">
 						招商代理
@@ -167,20 +169,21 @@
 			</div>
 		</div>
 		
+		<!--新闻导航内容-->
 		<div class="site-newsCenter">
 			<div class="site-container clearfix">
 				<div class="col-xs-2 padding-0 news-left">
 					<ul class="news-left-nav">
 						<h2>陶瓷资讯</h2>
-						<li class="active"><a href="news-market.html" target="iframepage">最新行情<i></i></a></li>
+						<li><a href="news-market.html" target="iframepage">最新行情<i></i></a></li>
 						<li><a href="news-company.html" target="iframepage">公司动态<i></i></a></li>
 					</ul>
 					
 					<ul class="news-left-nav">
 						<h2>交易指南</h2>
 						<li><a href="shopping-progress.html" target="iframepage">购物流程<i></i></a></li>
-						<li><a href="product-detail.html" target="iframepage">个性定制流程<i></i></a></li>
-						<li><a href="product-detail.html" target="iframepage">免费报价<i></i></a></li>
+						<li><a href="custommade-progress.html" target="iframepage">个性定制流程<i></i></a></li>
+						<li><a href="free-estimate.html" target="iframepage">免费报价<i></i></a></li>
 						<li><a href="product-detail.html" target="iframepage">服务保障<i></i></a></li>
 					</ul>
 					
@@ -195,7 +198,7 @@
 				<div class="col-xs-10 padding-0 news-right">
 					<iframe id="iframepage" name="iframepage" class="news-content-iframe" 
 						 marginheight="0" marginwidth="0" frameborder="0"  scrolling="no" height="0"
-						src="news-market.html"  onLoad="iFrameHeight()">
+						src=""  onLoad="iFrameHeight()">
 					</iframe>
 					<script type="text/javascript" language="javascript">
 					    function iFrameHeight() {
@@ -353,9 +356,22 @@
 			</a>
 		</div>
 		<!--底部js脚本-->
+		
+		
+		
 		<script type="text/javascript" src="js/md-js.js"></script>
+		
+		<script type="text/javascript">
+			//这里是做指定导航页面
+			var active_news = getQueryStringKeyItem('active_news', window.location.search);
+			$(".news-left-nav li").removeClass('active');
+			$(".news-left-nav li").eq(active_news).addClass("active");
+			var target_src = $(".news-left-nav li").eq(active_news).children("a").attr("href");
+			$("#iframepage").attr("src", target_src);
+		</script>
 		
 		<!--百度分享代码-->	
 		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+	
 	</body>
 </html>
