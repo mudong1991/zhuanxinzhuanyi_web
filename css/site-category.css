@@ -34,9 +34,6 @@ background: transparent url(../images/tag_new.png) no-repeat; color: white; padd
 .product-info-pay span{display: none;  width: 100px; text-align: center; margin-left: 10px; color: white;transition: all 0.5s;}
 .product-info-paypal{background-color: #E31939;}
 .product-info-collect{background-color: #838282;}
-#product-page{margin: 0 auto !important; text-align: center;}
-#product-page .active a{background: #FA731A !important; border: 1px solid #FA731A;}
-
 
 
 
@@ -159,3 +156,36 @@ transition: all 0.5s;}
 .case-detail-label a{display: inline-block; padding: 4px 14px; background: #CCCCCC; margin-bottom: 10px; transition: all 0.5s;}
 .case-detail-label a:hover{text-decoration: none; color: white; background: #EC971F;}
 .design-contact-form input[type="submit"]{width: 246px;}
+
+
+/*新闻中心样式 -------------------------------------------------------------------------------------------------------*/
+.site-newsCenter{margin-bottom: 20px;}
+/*左侧样式*/
+.news-left{border-left: 4px solid #FF6600;}
+.news-left-nav{background-color: #DAE2E2; box-shadow: 0px 0px 2px #ADADAD; margin-top: 2px;}
+.news-left-nav:last-child{margin-bottom: 0;}
+.news-left-nav h2, .news-left-nav li{line-height: 40px; border-bottom: 1px solid #f3f3f3;}
+.news-left-nav li:last-child{border: none;}
+.news-left-nav h2{margin: 0; font-size: 20px; padding-left: 10px; color: #ff6600; font-weight: bold;}
+.news-left-nav li a{display: block; width: 100%; height: 40px; padding-left: 20px; position: relative;}
+.news-left-nav li a i{position: absolute;width: 0;height: 0;border-top: 20px solid transparent;border-left: 16px solid #ff6600;border-bottom:20px solid transparent;
+right: -16px; top: 0px; display: none;}
+.news-left-nav li a:hover{text-decoration: none; color: white; background-color: #ff6600; width: 100%; }
+.news-left-nav li.active a{text-decoration: none; color: white; background-color: #ff6600; width: 100%;}
+.news-left-nav li.active a i{display: block;}
+/*右侧侧内容样式*/
+.news-right{padding-left: 24px;}
+.news-content-iframe{width: 100%;}
+
+/*最新行情/公司动态样式-------------------------------------------------------------------------------------------------------*/
+.newsMarket-title{margin: 0; font-size: 24px; border-bottom: 1px solid #CCCCCC; padding-bottom: 6px; margin-bottom: 10px;}
+.newsMarket-list{width: 100%; margin: 0; padding: 0;}
+.newsMarket-list li{width: 100%; padding: 0;margin-bottom: 20px; height: 190px;  box-shadow: 0 0 4px #E3E3E3; padding: 10px; transition: all 0.5s;}
+.newsMarket-list li:hover{background-color: #EEEEEE;}
+.newsMarket-list-img{height: 170px;}
+.newsMarket-list-img img{height: 170px; width: 100%;}
+.newsMarket-list-content{padding-left: 10px;}
+.newsMarket-list-title{margin-top: 6px;}
+.newsMarket-list-text{max-height: 70px; overflow: hidden;text-indent: 2em;}
+.newsMarket-list-info span{margin-right: 20px;}
+.newsMarket-list-text a:hover{text-decoration: none;}

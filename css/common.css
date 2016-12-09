@@ -37,10 +37,10 @@
 .shop-car-title{line-height: 40px; overflow: hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; max-height: 44px; text-align: left;}
 .shop-car-pay{padding: 0; margin: 0; text-align: right; padding-right: 5px;}
 /*导航*/
-.site-nav{height: 40px; width: 100%; background:#EB5350; margin-top: 10px;box-shadow: 0px 0px 6px #999; color: white; font-size: 16px; text-align: center;}
-.nav-list-ul a{display: inline-block; width: 100px; color: white; height: 40px; line-height: 40px; position: relative; transition: all 0.5s;}
-.nav-active{background:#E31939;}
-.nav-list-ul a:hover{background: #E31939; text-decoration: none;}
+.site-nav{height: 40px; width: 100%; margin-top: 10px;box-shadow: 0px 0px 6px #999; font-size: 16px; text-align: center; border-bottom: 2px solid #FF6600;}
+.nav-list-ul a{display: inline-block; width: 100px; height: 40px; line-height: 40px; position: relative; transition: all 0.5s;}
+.nav-active{background:#FF6600; color: white;}
+.nav-list-ul a:hover{background: #FF6600; text-decoration: none; color: white;}
 .nav-list-ul a img{position: absolute;}
 
 /*位置*/
@@ -65,7 +65,7 @@
 .floatfile a:hover .free-phone{display: block;}
 
 /*网页底部*/
-.site-footer{ background: transparent url(../images/goods_block.gif) repeat; min-height: 280px;}
+.site-footer{ background: transparent url(../images/goods_block.gif) repeat; min-height: 280px; border-top: 2px solid #e31939; box-shadow: 0 0 4px #999;}
 .footer{border-bottom: 1px solid #ADADAD; height: 190px;}
 .footer li{display: block; padding: 0; padding-top: 20px; }
 .footer li a:hover{text-decoration: underline;}
@@ -76,3 +76,10 @@
 .footer-contact>div{ width: 100%; padding-left: 20px;}
 .footer-weixin{padding-right: 10px;}
 .footer-weixin h4{font-size: 14px;}
+
+/*页面*/
+.site-pagination{margin: 0 auto !important; text-align: center; }
+.site-pagination li a{color: black;}
+.site-pagination li a:hover{border: 1px solid #FA731A;}
+.site-pagination li.active a{background: #FA731A !important; border: 1px solid #FA731A;}
+.site-pagination li.active a:hover{border: 1px solid #FA731A;}

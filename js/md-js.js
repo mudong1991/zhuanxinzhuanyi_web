@@ -167,9 +167,19 @@ $(function(){
 		case_detail("next");
 	})
 	
+	/*
+	 *news.html的js脚本
+	 * ******************************************************************/
+	/*左侧导航*/
+	$(".news-left-nav li a").on("click", function(){
+		$(".news-left-nav li").removeClass('active');
+		$(this).parent().addClass("active");
+	})
+	
+	
 	
 	/*
-	 *goods.html的js脚本
+	 *product-detail.html的js脚本
 	 * ******************************************************************/
 	//商品型号选择
 	$(".goods-model li:first-child").addClass("active");
